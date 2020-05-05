@@ -86,12 +86,13 @@
 * Conditional entropy is better than unconditional
     * H(Y|X) <= H(Y)
 
-### Kullback-Leibler Distance
+### Kullback-Leibler Distance (Relative Entropy)
 
 * <b>D(P||Q) = ∑P(X)log(P(X)/Q(X)) = E[log(P(X)/Q(X))]</b>
 * Is not a distance metric
     * Not symmetric
     * Does not satisfy the triangle inequality
+* D(P||Q) is convex
 
 ### Mutual Information (MI)
 
@@ -107,8 +108,17 @@
 * For distribution P(X), and convex f,
     * f(∑P(X) * X) <= ∑P(X) * f(x)
     * f(E[X]) <= E[f(x)]
+* <b>KL(P||Q) >= 0</b>
+    * By applying Jensen's inequality,
+    * <b>KL(P||Q) = ∑P(X)logP(X)/Q(X) = -∑P(X)logQ(X)/P(X) >= -log∑P(X)Q(X)/P(X) = -log∑Q(X) = -log1 = 0</b>
 
 ### Cross Entropy
 
+* A measure of how good our model is
+    * Better model has lower cross-entropy
 * Joint entropy는 하나의 확률 분포 P에 대해서, X와 Y 두 개의 사건이 갖는 정보량으로 정의
 * Cross entropy는 두 개의 확률 분포 P와 Q에 대해서, 하나의 사건 X가 갖는 정보량으로 정의
+* When P = Real Distribution, Q = Model,
+   * <b>CE = H(P) + KL(P||Q) = -∑P(X)logQ(X)</b>
+* A general loss function in ML classification tasks
+* Minimizing CE is equivalent to maximizing log-likelihood
