@@ -8,6 +8,6 @@
 
 ### [3. Linguistic Essentials](/Linguistic%20Essentials.md)
 
-### [4. Text Processing Collocations](/Text%20Processing%20Collations.md)
+### [4. Text Processing Collocations](/Text%20Processing%20Collocations.md)
 
 ### [5. Statistical Inference: N-gram language modeling](/Statistical%20Inference.md)
