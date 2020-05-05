@@ -36,3 +36,13 @@
         * 검색 엔진 (Search engine) 
     * QA (Question Answering)
         * 챗봇 (Chat bot)
+
+### What makes NLP hard?
+
+* Crash Blossoms: A sentence that is subject to incorrect interpretation due to syntactic and/or lexical ambiguity.
+    * "Violinist Linked to JAL Crash Blossoms"
+* Non-standard English
+* Segmentation Issues
+* 관용구 (Idioms)
+* 신조어구 (Neologism)
+* World Knowledge
