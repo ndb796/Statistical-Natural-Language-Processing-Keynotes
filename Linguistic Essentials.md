@@ -37,3 +37,17 @@
 * Output: sequence of pairs
 * 음소의 구성(Composition of phonemes)을 내재된 어휘 단위 (Lexical Unit)로 처리
     * e.g. Quotations - quote/V + -ation(der. V->N) + NNS.
+* 형태소 조합 (Morpheme Combination)
+    * Certain combinations / sequencing possible, other not:
+    * Deliver + able + s, but not able + derive + s
+
+### Dictionary (or Lexicon)
+
+* Morpholoical
+    * Description of morphological "behavior"
+* Syntactic
+    * Part of speech
+    * Relations to other words
+* Semantic
+    * Semantic features
+    * Valency frames 
