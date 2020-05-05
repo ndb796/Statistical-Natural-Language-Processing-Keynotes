@@ -2,7 +2,7 @@
 
 > Keynotes for Statistical Natural Language Processing
 
-### [1. Introduction](/Introduction/)
+### [1. Introduction](/Introduction.md)
 
 ### 2. Mathematical Foundation
 
