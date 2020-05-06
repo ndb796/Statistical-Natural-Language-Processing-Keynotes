@@ -11,3 +11,7 @@
 ### [4. Text Processing Collocations](/Text%20Processing%20Collocations.md)
 
 ### [5. Statistical Inference: N-gram language modeling](/Statistical%20Inference.md)
+
+### [6. Text Classification and Naive Bayes](/Text%20Classification%20and%20Naive%20Bayes.md)
+
+### [7. Word Meaning and Similarity](/Word%20Meaning%20and%20Similarity.md)
