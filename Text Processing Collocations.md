@@ -28,6 +28,7 @@
 
 * Negations
     * Caret means negation only when first in []
+    * <b>가장 앞쪽</b>에 있을 때만 부정의 의미를 가짐
 
 |Pattern|Matches||
 |------|------|------|
