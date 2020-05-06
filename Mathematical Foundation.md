@@ -31,6 +31,7 @@
 ### Independence
 
 * If A and B are independent, P(B|A) = P(B)
+* If A and B are independent, P(A, B) = P(A)P(B)
 
 ### Chain Rule
 
@@ -44,6 +45,7 @@
 ### Random Variables
 
 * Is a function X: Ω → Q
+    * 현실 세계의 사건들을 실수 형태의 데이터로 표현
     * <b>It's easier to handle real numbers than real-world events</b>
 * Random variable is dicrete if Q is countable (i.e. also if finite)
 * Example
@@ -65,6 +67,8 @@
     * <b>E(X) = ∑P(X) * X</b>
 * Entropy is non-negative
 * H(P) is concave
+* 기본적으로 Entropy는 Uniform Distribution일 때 가장 높음
+* Notation: H(X)와 H(P) 둘 다 같은 의미임
 
 ### Perplexity
 
