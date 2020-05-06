@@ -46,3 +46,41 @@
     * Count sequences of two words in T: c(wi-1, wi)
     * <b>p(wi|wi-2,w-1) = count(wi-2, wi-1, wi) / count(wi-1, wi)</b>
     * 단순히 Likelihood 공식을 이용하여 다음에 나올 문자(wi)의 확률을 계산할 수 있음
+
+### Intuition of Perplexity
+
+* A better model of a text
+    * Is one which assigns a higher probability to the word that actually occurs
+
+### Perplexity
+
+* The best language model is one that best predicts an unseen test set
+    * Gives the highest P(sentence)
+* PP(W) = pow(P(w1, w2, w3, ..., wn), -1/N)
+    * For bigrams: PP(W) = pow(∏P(wi|wi-1), -1/N)
+* Lower perplexity = better model
+|N-gram Order|Unigram|Bigram|Trigram|
+|------|------|------|------|
+|Perplexity|962|170|109|
+
+### Language Modeling Example
+
+* Training data:
+    * "\<s\> \<s\> He can buy the can of soda."
+* Unigram P1: P(He) = P(buy) = P(the) = P(of) = P(soda) = P(.) = 0.125, P(can) = 0.25
+* Bigram P2: P(He|\<s\>) = 1, P(can|He) = 1, P(buy|can) = 0.5, P(of|can) = 0.5, p(the|buy) = 1, ...
+* Trigram P3: P(He|\<s\>,\<s\>) = 1, P(can|\<s\>,He) = 1, P(buy|He,can) = 1, P(of|the,can) = 1, ...
+* H(P1) = 2.75, H(P2) = 0.25, H(P3) = 0
+* When the test data = "\<s\> \<s\> It was the greatest buy of all."
+    * We want to make all probabilties non-zero → <b>Data sparseness handling</b>
+
+### Eliminating the Zero Probabilities: Laplace Smoothing
+
+* There are many ways of smoothing
+* Predicting words w from a vacabulary V, training data T:
+    * <b>P'(w|h) = (c(h, w) + 1) / (c(h) + |V|)</b>
+* Example
+    * Training data: "\<s\> what is it what is small?", |T| = 8
+    * V = {what, is, it, small, ?, \<s\>, flying, birds, are, a, bird, .}, |V| = 12
+    * P(what is it?) = 0.25 * 0.25 * 0.125 * 0.125
+    * <b>P'(what is it?) = 0.125 * 0.125 * 0.1 * 0.1</b>
