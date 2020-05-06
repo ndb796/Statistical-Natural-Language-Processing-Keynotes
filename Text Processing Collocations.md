@@ -147,12 +147,74 @@
     * <b>접사 (Affixes): Bits and pieces that adhere to stems</b>
         * Often with grammatical functions
 
-### 어간 추출 (Stemming)
+### Stemming (어간 추출)
 
 * 어간을 추출하는 작업: 정해진 규칙에 따라서 단어의 어미를 자름
 * Reduce terms to their stems in information retrieval
 * Stemming is crude chopping of affixes
     * language dependent
-    * e.g., automate(s), automatic, automation all reduced to <b>automat</b>.
+    * e.g., automate(s), automatic, automation all reduced to <b>automat</b>
+* Porter's algorithm: The most common English stemmer
 
-### Porter's algorithm: The most common English stemmer
+### Minimum Edit Distance
+
+* The minimum number of editing operations
+    * Insertion
+    * Deletion
+    * Substitution
+* For string X → string Y
+* Pseudocode
+<pre>
+D[0][0] = 0
+For each i = 1..N
+    D[i][0] = D[i-1][0] + deletion(X[i])
+For each j = 1..M
+    D[0][j] = D[0][j-1] + insertion(Y[j])
+
+For each i = 1..N
+    For each j = 1..M
+        if X[i] == Y[j]
+            D[i][j] = D[i-1][j-1]
+        else
+            D[i][j] = min(D[i-1][j] + deletion(X[i]), D[i][j-1] + insertion(Y[j]), D[i-1][j-1] + substitution(X[i], Y[j]))
+
+Then, D[N][M] is the minimum edit distance.
+</pre>
+* Python 3.7 Code
+<pre>
+''' Weighted Minimum Edit Distance '''
+# Find the "Minimum Edit Distance" from X to Y.
+X = "EXECUTION"
+Y = "INTENTION"
+
+n = len(X)
+m = len(Y)
+
+D = [[0] * (m + 1) for _ in range(n + 1)]
+
+# Define Distance Functions
+def deletion(a):
+    return 1
+def insertion(a):
+    return 1
+def substitution(a, b):
+    return 1 # return 2 in Levenshtein algorithm. 
+
+# Initialization
+D[0][0] = 0
+for i in range(1, n + 1):
+    D[i][0] = D[i - 1][0] + deletion(X[i - 1])
+for j in range(1, m + 1):
+    D[0][j] = D[0][j - 1] + insertion(Y[j - 1])
+
+# Recurrence Relation
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        if X[i - 1] == Y[j - 1]:
+            D[i][j] = D[i - 1][j - 1]
+        else:
+            D[i][j] = min(D[i - 1][j] + deletion(X[i - 1]), D[i][j - 1] + insertion(Y[j - 1]), D[i - 1][j - 1] + substitution(X[i - 1], Y[j - 1]))
+
+# Termination (D[N][M] is the minimum edit distance.)
+print(D[n][m])
+</pre>
