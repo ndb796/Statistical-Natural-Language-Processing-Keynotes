@@ -15,3 +15,7 @@
 ### [6. Text Classification and Naive Bayes](/Text%20Classification%20and%20Naive%20Bayes.md)
 
 ### [7. Word Meaning and Similarity](/Word%20Meaning%20and%20Similarity.md)
+
+### [8. Sentiment Analysis](/Sentiment%20Analysis.md)
+
+### [9. Hidden Markov Models (HMM)](/Hidden%20Markov%20Models.md)
