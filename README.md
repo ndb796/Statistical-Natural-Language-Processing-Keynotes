@@ -19,3 +19,7 @@
 ### [8. Sentiment Analysis](/Sentiment%20Analysis.md)
 
 ### [9. Hidden Markov Models (HMM)](/Hidden%20Markov%20Models.md)
+
+### [10. Maximum Entropy Models](/Maximum%20Entropy%20Models.md)
+
+### [11. POS Tagging](/POS%20Tagging.md)
