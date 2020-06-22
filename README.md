@@ -35,3 +35,13 @@
 ### [16. Neural Machine Translation](/Neural%20Machine%20Translation.md)
 
 ### [17. Information Extraction](/Information%20Extraction.md)
+
+### [18. Information Retrieval](/Information%20Retrieval.md)
+
+### [19. Automatic Speech Recognition](/Automatic%20Speech%20Recognition.md)
+
+### [20. Text-To-Speech](/Text-To-Speech.md)
+
+### [21. Spoken Language Understanding](/Spoken%20Language%20Understanding.md)
+
+### [22. Dialog Management](/ Dialog%20Management.md)
