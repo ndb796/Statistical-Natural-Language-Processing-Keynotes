@@ -23,3 +23,15 @@
 ### [10. Maximum Entropy Models](/Maximum%20Entropy%20Models.md)
 
 ### [11. POS Tagging](/POS%20Tagging.md)
+
+### [12. Probabilistic parsing (PCFG)]
+
+### [13. Deep Learning NLP1](/Deep%20Learning%20NLP1.md)
+
+### [14. Deep Learning NLP2](/Deep%20Learning%20NLP2.md)
+
+### [15. Statistical Machine Translation](/Statistical%20Machine%20Translation.md)
+
+### [16. Neural Machine Translation](/Neural%20Machine%20Translation.md)
+
+### [17. Information Extraction](/Information%20Extraction.md)
