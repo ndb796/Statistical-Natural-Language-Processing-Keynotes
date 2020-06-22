@@ -3,7 +3,7 @@
 * RBMT (Rule-Based Machine Translation)
     * Analysis, Structure transfer, and Generation
 * SMT/NMT
-    * Direct Tranlsation
+    * Direct Translation
 
 ### SMT: Noisy Channel Model
 
@@ -13,26 +13,26 @@
     * The clean (original) data can not be observed directly
     * Noisy channel adds some noise to the data
 * Decoder
-    * Estimates the original data from the noiy data
+    * Estimates the original data from the noisy  data
     * Recovered data may contain some errors
-    * Our goal is designing the decoder that recover the data with minimum errors
+    * Our goal is designing the decoder that recovers  the data with minimum errors
 
 ### Noisy Channel Model in SMT
 
-* Given a source sentence S find T taht maximizes probability of T given S
+* Given a source sentence S find T that maximizes the probability of T given S
 * Language model
-    * Role: Making fluent sentence
-    * Model for target language
+    * Role: Making a fluent sentence
+    * Model for the target language
 * Translation model:
-    * Role: Making correct translation
+    * Role: Making a correct translation
     * Model for both languages
 * Decoder
-    * Role: Find a sentence which gives best score
+    * Role: Find a sentence which gives the best score
     * We use P(S|T)P(T) rather than P(T|S).
 
 ### Parallel Corpus
 
-* Two or more texts written in different languages have same meaning
+* Two or more texts written in different languages have the same meaning
 * We need alignments at least sentence level
 
 ### N-gram Language Model
@@ -46,4 +46,4 @@
         * 0 history - Unigram
         * 1 history - Bigram
         * 2 history - Trigram
-* N-gram is most popular method for scoring sentences
+* N-gram is the most popular method for scoring sentences
