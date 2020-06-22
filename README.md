@@ -44,4 +44,4 @@
 
 ### [21. Spoken Language Understanding](/Spoken%20Language%20Understanding.md)
 
-### [22. Dialog Management](/ Dialog%20Management.md)
+### [22. Dialog Management](/Dialog%20Management.md)
