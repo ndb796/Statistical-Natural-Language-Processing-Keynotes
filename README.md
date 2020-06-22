@@ -24,7 +24,7 @@
 
 ### [11. POS Tagging](/POS%20Tagging.md)
 
-### [12. Probabilistic parsing (PCFG)]
+### [12. Probabilistic Parsing (PCFG)](/Probabilistic%20Parsing.md)
 
 ### [13. Deep Learning NLP1](/Deep%20Learning%20NLP1.md)
 
