@@ -1,6 +1,6 @@
 ### Information Retrieval
 
-* Information Retrieval (IR) is finding material of an unstructed nature (usually text) that statisfies an information need from within large collections (usually stored on computers).
+* Information Retrieval (IR) is finding material of an unstructured nature (usually text) that satisfies an information need from within large collections (usually stored on computers).
 * For example:
     * E-mail search
     * Searching your laptop
@@ -11,7 +11,7 @@
 ### How good are the retrieved docs?
 
 * 정확도(Precision): Fraction of retrieved docs that are relevant to the user's information need.
-* 재현율(Recall): Fraction of relevant docs in collection that are retrieved.
+* 재현율(Recall): Fraction of relevant docs in the collection that are retrieved.
 
 ### Inverted index
 
@@ -20,7 +20,7 @@
     * Hello → [1, 2, 4, 11, 31, 45, 173, 174]
 * Can we used fixed-size arrays for this?
 
-### Problem with Boolean search: feast or famine
+### Problem with the Boolean search: feast or famine
 
 * Boolean queries often result in either too few (≈0) or too many (1000s) results.
 * It takes a lot of skill to come up with a query that produces a manageable number of hits.
@@ -34,7 +34,7 @@
 * How fast does it search
     * Latency as a function of index size
 * Expressiveness of query language
-    * Abiity to express complex information needs
+    * Ability to express complex information needs
 
 ### Text Summarization
 
