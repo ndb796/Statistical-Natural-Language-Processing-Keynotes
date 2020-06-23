@@ -11,7 +11,7 @@
 
 ### Named Entity Recognition (NER)
 
-* A very important sub-task: find and classify names in text
+* A very important sub-task: find and classify names in a text
 * The uses:
     * Named entities can be indexed, linked off, etc.
     * Sentiment can be attributed to companies or products.
